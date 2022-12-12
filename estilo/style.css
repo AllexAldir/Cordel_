@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
+
+@import url('https://fonts.googleapis.com/css2? family= Lato & family= Passion+One & family= Work+Sans & display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Lato & family= Passion+One & family= Sriracha & family= Work+Sans & display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2? family= Lato & family= Passion+One & family= Sriracha & family= Work+Sans & display=swap');
+
+/*
+font-family: 'Sriracha',
+cursiva;
+
+font-family: 'Passion One',
+cursiva;
+*/
+
+:root{
+    --font01: Verdana, Geneva, Tahoma, sans-serif;
+    --font02: 'Passion One','cursiva';
+    --font03: 'Sriracha',"cursiva";
+        
+        
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font01);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps; 
+    /*
+    Aqui deixa o coteúdo do h1 em letras maiúsculas...
+
+    */
+    font-family: var(--font02);
+    font-size: 8vw;
+    /* margin-bottom: 10px; */
+}
+
+header > p{
+    padding-bottom: 50px; 
+    /*
+    manter assimetrico
+
+    */
+}
+
+header a, footer a{
+    display: inline-block;
+    padding-top: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh; 
+    /*
+    Aqui deixei o tamanho de 10% do meu padding de acordo com a altura da minha view port
+    */
+
+    line-height: 2em;
+    padding-left: 20px;
+    font-family: var(--font03);
+    font-weight: bolder;
+    font-size: 3vw;
+}
+
+#rl{
+    margin-bottom: 25px;
+}
+
+.normal{
+    background-color: white;
+    color: black;
+}
+
+.imagem{
+    background-color: black;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.36);
+}
+
+.imagem > p{
+    background-color: rgba(58, 58, 58, 0.404);
+    /* width: 400px; */
+    display: inline-block;
+    padding: 5px;
+    /* text-shadow: 1px 1px 0px; */
+}
+
+.imagem#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: -19px;
+}
+
+.imagem#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed; 
+    /*
+    efeito paralax
+    */
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+picture{
+    padding-right: 10px;
+}
+
+img{
+    display: inline-block;
+    /* padding-top: 10px; */
+}
